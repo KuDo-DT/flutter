@@ -1318,19 +1318,28 @@ class _homeState extends State<home> {
                   borderRadius: BorderRadius.circular(10)),
             ),
             Container(
-              margin: const EdgeInsets.only(top: 190, left: 70),
-              child: const Text(
-                'Hi, where do you want to explore? ',
-                style: TextStyle(color: Colors.green, fontSize: 16),
+              margin: const EdgeInsets.only(top: 175, left: 20),
+              child: const TextField(
+                decoration: InputDecoration(
+                  prefixIcon: Icon(
+                   Icons.search,
+
+                  ),
+
+                  hintText: "Hi, where do you want to explore? ",
+                  hintStyle: TextStyle(fontSize: 13, color: Colors.green),
+                  border: InputBorder.none
+                ),
+                style: TextStyle(color: Colors.green, fontSize: 20),
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(top: 190, left: 30),
-              child: Icon(
-                Icons.search,
-                color: Colors.green,
-              ),
-            )
+            // Container(
+            //   margin: EdgeInsets.only(top: 190, left: 30),
+            //   child: Icon(
+            //     Icons.search,
+            //     color: Colors.green,
+            //   ),
+            // )
           ])
         ]),
       ]),
